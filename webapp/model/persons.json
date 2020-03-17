@@ -1,0 +1,9 @@
+{
+ "test" : "Hallo",
+ "personen": [
+	{
+	"picture" : "https://upload.wikimedia.org/wikipedia/commons/a/a7/Marilyn_Monroe%2C_Korea%2C_1954_cropped.jpg",
+	"name" : "Marilyn Monroe"
+	}
+]
+}

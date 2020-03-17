@@ -1,0 +1,14 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sap.ui.demo.nav.controller.Guess"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="_IDEGen_page0" title="Errate de Namen">
+		<content>
+			<!-- TODO: Anzeige Fortschritt und Punktestand -->
+			<Image src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Marilyn_Monroe%2C_Korea%2C_1954_cropped.jpg" width="140px" height="140px"
+				id="image1"/>
+			 <Button id="_IDEGen_button1" text="Albert" class="sapUiTinyMarginEnd"/>
+			 <Button id="_IDEGen_button0" text="Marylin" class="sapUiTinyMarginEnd"/>
+			 
+			 <!-- Sprung zur nächsten Frage -->
+		</content>
+	</Page>
+</mvc:View>
