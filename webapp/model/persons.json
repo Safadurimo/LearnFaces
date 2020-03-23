@@ -4,6 +4,14 @@
 	{
 	"picture" : "https://upload.wikimedia.org/wikipedia/commons/a/a7/Marilyn_Monroe%2C_Korea%2C_1954_cropped.jpg",
 	"name" : "Marilyn Monroe"
+	},
+	{
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/f/f5/Einstein_1921_portrait2.jpg",
+		"name" : "Albert Einstein"
+	},
+	{
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/c/ce/Marie_Curie_%28Nobel-Chem%29.jpg",
+		"name" : "Marie Curie"
 	}
 ]
 }

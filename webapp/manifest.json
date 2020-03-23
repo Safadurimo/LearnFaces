@@ -74,15 +74,23 @@
 				},
 				"async": true
 			},
-			"routes": [{
-				"pattern": "",
-				"name": "home",
-				"target": "home"
-			}, {
-				"pattern": "guess",
-				"name": "guess",
-				"target": "guess"
-			}],
+			"routes": [
+				{
+					"pattern": "",
+					"name": "home",
+					"target": "home"
+				},
+				{
+					"pattern": "guess",
+					"name": "guess",
+					"target": "guess"
+				},
+				{
+					"pattern": "result",
+					"name": "result",
+					"target": "result"
+				}
+			],
 			"targets": {
 				"home": {
 					"viewId": "home",
@@ -99,6 +107,12 @@
 					"viewId": "guess",
 					"viewType": "XML",
 					"viewName": "Guess"
+				},
+				"result": {
+					"viewPath": "sap.ui.demo.nav.view",
+					"viewId": "result",
+					"viewType": "XML",
+					"viewName": "Result"
 				}
 			}
 		},

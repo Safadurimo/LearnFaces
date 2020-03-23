@@ -3,10 +3,18 @@
 	<Page id="_IDEGen_page0" title="Errate de Namen">
 		<content>
 			<!-- TODO: Anzeige Fortschritt und Punktestand -->
-			<Image src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Marilyn_Monroe%2C_Korea%2C_1954_cropped.jpg" width="140px" height="140px"
+			<Image src="{game>/current_question/picture}"
+			width="140px" height="140px"
 				id="image1"/>
-			 <Button id="_IDEGen_button1" text="Albert" class="sapUiTinyMarginEnd"/>
-			 <Button id="_IDEGen_button0" text="Marylin" class="sapUiTinyMarginEnd"/>
+			 <Button id="button1" text="Albert" class="sapUiTinyMarginEnd" press =".onHavingGuessed" />
+			 <Button id="button2" text="Marylin" class="sapUiTinyMarginEnd" press =".onHavingGuessed"/>
+			 
+			  <Button id="nextQuestion" 
+			          text="Next" 
+			          class="sapUiTinyMarginEnd" 
+			          press =".onNext"
+			          visible="{= ${game>/current_question/answer} === undefined ? false : true }"
+			          />
 			 
 			 <!-- Sprung zur nächsten Frage -->
 		</content>

@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/demo/nav/controller/BaseController",
-	"sap/ui/model/json/JSONModel"
-], function (BaseController, JSONModel) {
+	"sap/ui/model/json/JSONModel",
+	"../model/Game"
+], function (BaseController, JSONModel, Game) {
 	"use strict";
 
 	return BaseController.extend("sap.ui.demo.nav.controller.Home", {
@@ -11,6 +12,7 @@ sap.ui.define([
 		},
 
 		onPressStartGame: function () {
+			Game.startNewGame();
 			this.getRouter().navTo("guess");
 
 			var sPath = jQuery.sap.getModulePath("sap.ui.demo.nav", "/model/persons.json");
