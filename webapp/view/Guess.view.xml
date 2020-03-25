@@ -1,22 +1,26 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sap.ui.demo.nav.controller.Guess"
-	xmlns:html="http://www.w3.org/1999/xhtml">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m"
+	controllerName="sap.ui.demo.nav.controller.Guess" xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page id="_IDEGen_page0" title="Errate de Namen">
-		<content>
-			<!-- TODO: Anzeige Fortschritt und Punktestand -->
-			<Image src="{game>/current_question/picture}"
-			width="140px" height="140px"
-				id="image1"/>
-			 <Button id="button1" text="Albert" class="sapUiTinyMarginEnd" press =".onHavingGuessed" />
-			 <Button id="button2" text="Marylin" class="sapUiTinyMarginEnd" press =".onHavingGuessed"/>
-			 
-			  <Button id="nextQuestion" 
-			          text="Next" 
-			          class="sapUiTinyMarginEnd" 
-			          press =".onNext"
-			          visible="{= ${game>/current_question/answer} === undefined ? false : true }"
-			          />
-			 
-			 <!-- Sprung zur nächsten Frage -->
-		</content>
+		<!-- TODO: Anzeige Fortschritt und Punktestand -->
+		<l:BlockLayout background="Light">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell>
+					<Image src="{game>/current_question/picture}" width="140px" height="140px" id="image1"/>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell>
+					<Button id="button1" text="Albert" class="sapUiTinyMarginEnd" press=".onHavingGuessed"/>
+					<Button id="button2" text="Marylin" class="sapUiTinyMarginEnd" press=".onHavingGuessed"/>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+			<l:BlockLayoutRow>
+				<!-- Sprung zur nächsten Frage -->
+				<l:BlockLayoutCell>
+					<Button id="nextQuestion" text="Next" class="sapUiTinyMarginEnd" press=".onNext"
+						visible="{= ${game>/current_question/answer} === undefined ? false : true }"/>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
 	</Page>
 </mvc:View>
