@@ -1,5 +1,6 @@
 sap.ui.define([
-	"./model/Game",
+	"Quickstart/test/unit/model/Game"
 ], function() {
 	"use strict";
+	
 });
