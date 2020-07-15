@@ -2,7 +2,7 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Result">
 		<content>
-			
+			<Text text="Congratulation! You scored {game>/score} of {game>/number_of_questions}!" />
 			<Button text="Start new Game" press="onPressStartGame"/>
 			<Button text="Back to Homepage" press="onPressHomePage"/>
 		</content>

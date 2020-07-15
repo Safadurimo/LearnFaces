@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m"
 	controllerName="sap.ui.demo.nav.controller.Guess" xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page id="_IDEGen_page0" title="Errate de Namen">
-		<!-- TODO: Anzeige Fortschritt und Punktestand -->
+		<Text text="Question {game>/current_question_index} of {game>/number_of_questions}" />
 		<l:BlockLayout background="Light">
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell>
@@ -10,8 +10,8 @@
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow>
 				<l:BlockLayoutCell>
-					<Button id="button1" text="Albert" class="sapUiTinyMarginEnd" press=".onHavingGuessed"/>
-					<Button id="button2" text="Marylin" class="sapUiTinyMarginEnd" press=".onHavingGuessed"/>
+					<Button id="button1" text="{game>/current_question/answers/0/answer}" class="sapUiTinyMarginEnd" press=".onHavingGuessed"/>
+					<Button id="button2" text="{game>/current_question/answers/1/answer}" class="sapUiTinyMarginEnd" press=".onHavingGuessed"/>
 				</l:BlockLayoutCell>
 			</l:BlockLayoutRow>
 			<l:BlockLayoutRow>
