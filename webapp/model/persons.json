@@ -12,6 +12,34 @@
 	{
 		"picture" : "https://upload.wikimedia.org/wikipedia/commons/c/ce/Marie_Curie_%28Nobel-Chem%29.jpg",
 		"name" : "Marie Curie"
+	},
+	{
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/d/d3/Bill_Clinton.jpg",
+		"name" : "Bill Clinton"
+	},
+	{
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/5/53/Donald_Trump_official_portrait_%28cropped%29.jpg",
+		"name" : "Donald Trump"
+	},
+	{
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+		"name" : "George_Washington"
+	},
+	{
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+		"name" : "Abraham_Lincoln"
+	},
+	{
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/b/b8/FDR_in_1933.jpg",
+		"name" : "Franklin Roosevelt"
+	},
+	{
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
+		"name" : "Barack Obama"
+	},
+	{
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/5/5a/JimmyCarterPortrait2.jpg",
+		"name" : "Jimmy Carter"
 	}
 ]
 }

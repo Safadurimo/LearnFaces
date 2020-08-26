@@ -17,15 +17,25 @@ sap.ui.define([
 		
 		onHavingGuessed: function (oEvent) {
 			var idOfPressedButton = oEvent.getSource().getId();
-			var pressedButton = this.getView().byId(idOfPressedButton);
-			var answer = idOfPressedButton.charAt(idOfPressedButton - 1)
-			Game.setAnswer(answer);
+			var answer = idOfPressedButton.charAt(idOfPressedButton.length - 1)-1;
+			var correct = Game.setAnswer(answer);
 			
-			var btn = this.byId("button1"); // new sap.ui.commons.Button({text:'Hello World'});
-			btn.addStyleClass("myButtonStyle");
+			var button_number = answer + 1;
+			var btn = this.byId("button" + button_number );
+			
+			if(correct) {
+				btn.addStyleClass("myButtonStyleCorrect");
+			}
+			else {
+				btn.addStyleClass("myButtonStyleWrong");
+			}
 		},
 		
 		onNext: function (oEvent) {
+			this.byId("button1").removeStyleClass("myButtonStyleCorrect");
+			this.byId("button2").removeStyleClass("myButtonStyleCorrect");
+			this.byId("button1").removeStyleClass("myButtonStyleWrong");
+			this.byId("button2").removeStyleClass("myButtonStyleWrong");
 			if(Game.hasNextQuestion()){
 				Game.nextQuestion();
 			}
