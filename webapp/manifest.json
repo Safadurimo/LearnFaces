@@ -10,14 +10,6 @@
 			"version": "1.0.0"
 		},
 		"dataSources": {
-			"employeeRemote": {
-				"uri": "/here/goes/your/serviceUrl/",
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
-				}
-			},
 			"personen_data_source": {
 				"uri": "model/persons.json",
 				"type": "JSON"
@@ -56,9 +48,6 @@
 			"personen": {
 				"type": "sap.ui.model.json.JSONModel",
 				"dataSource": "personen_data_source"
-			},
-			"": {
-				"dataSource": "employeeRemote"
 			}
 		},
 		"routing": {
